@@ -1,4 +1,4 @@
-FROM openjdk:14-jdk-alpine
+FROM bellsoft/liberica-openjdk-alpine-musl:11
 
 RUN apk add tzdata
 RUN cp /usr/share/zoneinfo/Europe/Berlin /etc/localtime

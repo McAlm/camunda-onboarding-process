@@ -12,8 +12,8 @@
 	</parent>
 
 	<properties>
-		<camunda.version>7.14.1-ee</camunda.version>
-		<springBoot.version>2.3.4.RELEASE</springBoot.version>
+		<camunda.version>7.16.2-ee</camunda.version>
+		<springBoot.version>2.5.3</springBoot.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<version.java>1.8</version.java>

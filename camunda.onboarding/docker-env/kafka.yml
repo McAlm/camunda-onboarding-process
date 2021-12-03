@@ -10,7 +10,7 @@ services:
 ##### K A F K A #####
 
   zookeeper:
-    image: confluentinc/cp-zookeeper:6.0.1
+    image: confluentinc/cp-zookeeper:7.0.0
     hostname: zookeeper
     ports: 
     - "32181:32181"
@@ -22,7 +22,7 @@ services:
     - zookeeper-data:/data
 
   kafka:
-    image: confluentinc/cp-kafka:6.0.1
+    image: confluentinc/cp-kafka:7.0.0
     hostname: kafka
     ports: 
     - "9092:9092"
@@ -42,7 +42,7 @@ services:
     - kafka-data:/var/lib/kafka/data
 
   schema-registry:
-    image: confluentinc/cp-schema-registry:6.0.1
+    image: confluentinc/cp-schema-registry:7.0.0
     hostname: schema-registry
     ports:
     - "38081:38081"
@@ -55,7 +55,7 @@ services:
       SCHEMA_REGISTRY_DEBUG: "true"
 
   kafka-rest:
-    image: confluentinc/cp-kafka-rest:6.0.1
+    image: confluentinc/cp-kafka-rest:7.0.0
     hostname: kafka-rest
     ports:
     - "38082:38082"
